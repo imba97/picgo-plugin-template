@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "**/template/**/*.json": "plaintext",
+    "**/template/**/*.ts": "plaintext",
+    "**/template/**/*.js": "plaintext"
+  },
+  "[plaintext]": {
+    "editor.formatOnSave": false
+  }
+}

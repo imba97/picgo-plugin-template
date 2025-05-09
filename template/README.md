@@ -1,0 +1,3 @@
+# picgo-plugin-<%=name%>
+
+<%=description%>

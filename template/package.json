@@ -1,0 +1,51 @@
+{
+  "name": "picgo-plugin-<%=name%>",
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.10.0",
+  "description": "<%=description%>",
+  "author": "<%=author%>",
+  "license": "MIT",
+  <% if (repository) { -%>
+  "homepage": "https://github.com/<%=repository%>#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:<%=repository%>.git"
+  },
+  "bugs": {
+    "url": "https://github.com/<%=repository%>/issues"
+  },
+  <% } -%>
+  "keywords": [
+    "picgo",
+    "picgo-gui-plugin",
+    "picgo-plugin"
+  ],
+  "main": "dist/index.cjs",
+  "files": [
+    "dist/index.cjs",
+    "logo.png"
+  ],
+  "scripts": {
+    "prepare": "simple-git-hooks",
+    "build": "unbuild",
+    "lint": "eslint --cache",
+    "release": "bumpp"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.13.0",
+    "@types/node": "^22.15.17",
+    "bumpp": "^10.1.0",
+    "eslint": "^9.26.0",
+    "lint-staged": "^15.5.2",
+    "picgo": "^1.5.8",
+    "simple-git-hooks": "^2.13.0",
+    "typescript": "^5.8.3",
+    "unbuild": "^3.5.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --cache --fix"
+  }
+}
