@@ -32,7 +32,10 @@ Please cd ${options.dest}, and then
 pnpm install`)
 }
 
+const filters = {}
+
 module.exports = {
   prompts,
+  filters,
   complete
 }
