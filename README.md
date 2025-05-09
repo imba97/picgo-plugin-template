@@ -1,4 +1,4 @@
-# picgo-plugin-template
+# picgo-template-plugin
 
 Just another PicGo plugin template.
 
@@ -15,5 +15,5 @@ Just another PicGo plugin template.
 Init the plugin
 
 ```bash
-picgo init imba97/picgo-plugin-template picgo-plugin-name
+picgo init imba97/picgo-template-plugin picgo-plugin-name
 ```
